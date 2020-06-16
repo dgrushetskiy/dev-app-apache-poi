@@ -8,9 +8,10 @@ import java.io.IOException;
 public class App {
     public static void main( String[] args ) throws IOException {
         WriteExcel writeExcel = new WriteExcel();
-        String path = "/tmp/singleDataFile.xlsx";
-        writeExcel.writeSingleCellData(path);
-        writeExcel.writeMultipleCellData(path);
+        String pathSingle = "/tmp/singleDataFile.xlsx";
+        String pathMultiply = "/tmp/multiplyDataFile.xlsx";
+        writeExcel.writeSingleCellData(pathSingle);
+        writeExcel.writeMultipleCellData(pathMultiply);
         System.out.println("file created");
     }
 }

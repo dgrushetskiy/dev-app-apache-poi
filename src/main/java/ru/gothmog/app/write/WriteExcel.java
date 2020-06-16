@@ -41,7 +41,7 @@ public class WriteExcel {
     public void writeMultipleCellData(String filePath) throws IOException{
         Workbook workbook = new XSSFWorkbook();
         Sheet sheet = workbook.createSheet("firstSheet");
-        int [][] dataArray  = getRandomDataArray(5,6);
+        int [][] dataArray  = getRandomDataArray(10,10);
         for (int i = 0; i < dataArray.length; i++) {
             Row row = sheet.createRow(i);
             for (int j = 0; j < dataArray[i].length; j++) {
